@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
         margin: EdgeInsets.symmetric(
           horizontal: marginHorizontal,
         ),
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 30,
           left: 30,
         ),
@@ -129,8 +129,8 @@ class HomePage extends StatelessWidget {
             Align(
               alignment: Alignment.bottomRight,
               child: ClipRRect(
-                borderRadius:
-                    BorderRadius.only(bottomRight: Radius.circular(40)),
+                borderRadius: const BorderRadius.only(
+                    bottomRight: const Radius.circular(40)),
                 child: Image.asset(
                   'assets/hero.png',
                   height: lebar * 2,
@@ -158,13 +158,13 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Row(
                   children: [
                     Container(
                       height: 50,
                       width: lebar * .2,
-                      margin: EdgeInsets.only(right: 18),
+                      margin: const EdgeInsets.only(right: 18),
                       child: ElevatedButton(
                         onPressed: () {},
                         style: btn1Style,
@@ -180,7 +180,7 @@ class HomePage extends StatelessWidget {
                     Container(
                       height: 50,
                       width: lebar * .1,
-                      margin: EdgeInsets.only(right: 18),
+                      margin: const EdgeInsets.only(right: 18),
                       child: ElevatedButton(
                         style: btn2Style,
                         onPressed: () {},
@@ -195,9 +195,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 80),
+                const SizedBox(height: 80),
                 Row(
-                  children: [
+                  children: const [
                     SplitFont(desc: 'Property sold', numb: '450+'),
                     SizedBox(width: 38),
                     SplitFont(desc: 'Satisfied Client', numb: '122'),
