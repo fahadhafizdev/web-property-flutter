@@ -212,12 +212,54 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget content1() {
+      return Container(
+        margin: EdgeInsets.fromLTRB(
+          marginHorizontal,
+          marginHorizontal,
+          marginHorizontal + 50,
+          marginHorizontal,
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              'assets/hero2.png',
+              height: lebar * .38,
+            ),
+            SizedBox(width: marginHorizontal - 20),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Image.asset(
+                    'assets/line.png',
+                    width: lebar * .1,
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    'Choose Your Type Easier With Us',
+                    style: tBlack.copyWith(
+                      fontWeight: bold,
+                      fontSize: 50,
+                    ),
+                  ),
+                  SizedBox(height: 40),
+                ],
+              ),
+            )
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             topNavbar(),
             header(),
+            content1(),
           ],
         ),
       ),
