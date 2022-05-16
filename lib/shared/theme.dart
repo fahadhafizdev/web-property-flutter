@@ -15,6 +15,9 @@ var lebar;
 var marginHorizontal;
 var marginVertical;
 
+String textDesc1 =
+    'Finding the property model you love has never been easier. With a strategic location and easy to reach, it can be personalized easily with our agents.';
+
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;
 FontWeight medium = FontWeight.w500;

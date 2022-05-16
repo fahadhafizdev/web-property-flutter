@@ -244,7 +244,60 @@ class HomePage extends StatelessWidget {
                       fontSize: 50,
                     ),
                   ),
+                  SizedBox(height: 35),
+                  Text(
+                    textDesc1,
+                    style: tGrey.copyWith(
+                      fontWeight: regular,
+                      fontSize: 18,
+                    ),
+                  ),
                   SizedBox(height: 40),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/round_building1.png',
+                        height: lebar * .06,
+                      ),
+                      SizedBox(width: 30),
+                      Image.asset(
+                        'assets/round_building1.png',
+                        height: lebar * .06,
+                      ),
+                      SizedBox(width: 30),
+                      Image.asset(
+                        'assets/round_building1.png',
+                        height: lebar * .06,
+                      ),
+                      SizedBox(width: 30),
+                      Image.asset(
+                        'assets/round_building1.png',
+                        height: lebar * .06,
+                      ),
+                      SizedBox(width: 30),
+                      Image.asset(
+                        'assets/round_building1.png',
+                        height: lebar * .06,
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 50),
+                  Container(
+                    height: 50,
+                    width: lebar * .2,
+                    margin: const EdgeInsets.only(right: 18),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: btn1Style,
+                      child: Text(
+                        'Browse thousands of Property',
+                        style: tWhite.copyWith(
+                          fontWeight: medium,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
